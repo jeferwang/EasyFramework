@@ -22,4 +22,7 @@ if (DEBUG) {
 include CORE . '/common/function.php';
 //加载框架的核心文件
 include CORE . '/easy.php';
+//当实例化的类不存在的时候,自动触发的方法
+spl_autoload_register('\core\easy::load');
+//启动框架
 \core\easy::run();
