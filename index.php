@@ -11,6 +11,8 @@ define('EASY', realpath('./'));
 define('CORE', EASY . '/core');
 //项目文件目录
 define('APP', EASY . '/app');
+//定义模块命名空间变量
+define('MODULE', 'app');
 //是否开启调试模式
 define('DEBUG', true);
 if (DEBUG) {
